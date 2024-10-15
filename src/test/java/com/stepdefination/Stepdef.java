@@ -28,6 +28,8 @@ public class Stepdef {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.flipkart.com/");
 		 WebElement searchBox = driver.findElement(By.name("q"));
+		 
+		 searchBox.isDisplayed();
 		 searchBox.sendKeys("mobiles under 20000");
 		 searchBox.submit();
 		 
